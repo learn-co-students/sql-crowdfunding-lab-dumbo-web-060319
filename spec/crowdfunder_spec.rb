@@ -103,6 +103,7 @@ describe "crowdfunder sql" do
     end
 
     it '#selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal' do
+     
       expect(@db.execute(selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal)).to eq([["My book on SQL", 0], ["The next Inna-Gadda-Davida", 142]])
     end
 
